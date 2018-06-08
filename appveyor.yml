@@ -13,6 +13,7 @@ cache:
 build_script:
 - stack setup --no-terminal > nul
 - stack build --only-snapshot --no-terminal --trace
+- stack build
 
 test_script:
 - stack exec text-bug-repro-exe
