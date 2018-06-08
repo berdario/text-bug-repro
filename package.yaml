@@ -21,10 +21,11 @@ description:         Please see the README on GitHub at <https://github.com/berd
 
 dependencies:
 - base >= 4.7 && < 5
-- text
 
 library:
   source-dirs: src
+  dependencies:
+    - text
 
 executables:
   text-bug-repro-exe:
@@ -47,3 +48,4 @@ tests:
     - -with-rtsopts=-N
     dependencies:
     - text-bug-repro
+    - hspec
